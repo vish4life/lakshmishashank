@@ -34,9 +34,11 @@ jobs:
           python-version: "3.12"
 
       - name: Install Dependencies
-        run: uv pip install flet flet-audio --system
+        run: uv pip install flet==0.25.2 flet-audio==0.25.2 --system
 
       - name: Build Flet Static Web App
+        env:
+          PIP_NO_DEPS: "1"
         run: |
           uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
 
