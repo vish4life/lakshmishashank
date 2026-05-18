@@ -26,7 +26,7 @@ jobs:
           version: "latest"
       
       - name: Cleanup build directory
-        run: rm -rf build/ assets/app.zip dist/ .venv/ .uv/
+        run: rm -rf build/ assets/app.zip dist/ .venv/ .uv/ requirements.txt
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -38,7 +38,7 @@ jobs:
 
       - name: Build Flet Static Web App
         run: |
-          uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
+          uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash --include-packages flet flet-audio
 
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
