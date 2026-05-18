@@ -37,10 +37,8 @@ jobs:
         run: uv pip install flet==0.25.2 --system
 
       - name: Build Flet Static Web App
-        env:
-          PIP_NO_DEPS: "1"
         run: |
-          uv run flet build web --no-interactive --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
+          yes | uv run flet build web --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
 
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
