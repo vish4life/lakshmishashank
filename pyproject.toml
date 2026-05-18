@@ -1,0 +1,10 @@
+[project]
+name = "myprofile"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flet-audio>=0.85.1",
+    "flet[all]>=0.85.1",
+]

@@ -1,0 +1,47 @@
+name: Deploy Shashank's Profile Flet app to GitHub Pages
+
+on:
+  push:
+    branches: [ main ] # Triggers build every time you push code to the main branch
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "latest"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: uv pip install -r requirements.txt --system
+
+      - name: Build Flet Static Web App
+        run: |
+          uv run flet build web --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web # Flet outputs production files to this target directory
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
