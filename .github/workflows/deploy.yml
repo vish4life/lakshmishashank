@@ -34,7 +34,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install Dependencies
-        run: uv pip install flet==0.25.2 flet-audio==0.25.2 --system
+        run: uv pip install flet==0.25.2 flet-audio==0.85.0 --system
 
       - name: Build Flet Static Web App
         env:

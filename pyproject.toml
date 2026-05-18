@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "flet-audio>=0.25.2",
-    "flet[all]>=0.25.2",
+    "flet[all]>=0.85.0",
 ]
