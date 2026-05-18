@@ -35,6 +35,7 @@ jobs:
 
       - name: Build Flet Static Web App
         run: |
+          rm -rf build/ assets/app.zip dist/ .venv/ .uv/
           uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
 
       - name: Upload Build Artifacts
