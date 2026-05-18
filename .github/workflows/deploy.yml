@@ -34,10 +34,8 @@ jobs:
         run: uv pip install -r requirements.txt --system
 
       - name: Build Flet Static Web App
-        env:
-          FLET_NO_INTERACTIVE: "true"
         run: |
-          uv run flet build web --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
+          uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
 
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
