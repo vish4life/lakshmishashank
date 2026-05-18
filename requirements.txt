@@ -128,7 +128,7 @@ uvicorn==0.47.0
     # via flet-web
 uvloop==0.22.1
     # via uvicorn
-watchdog>=4.0.0
+watchdog==6.0.0
     # via flet-cli
 watchfiles==1.2.0
     # via uvicorn
