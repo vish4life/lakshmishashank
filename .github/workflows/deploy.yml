@@ -38,7 +38,7 @@ jobs:
 
       - name: Build Flet Static Web App
         run: |
-          uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash --include-packages flet flet-audio
+          uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
 
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
