@@ -1,0 +1,12 @@
+# .fletignore
+.venv/
+.git/
+.github/
+build/
+dist/
+__pycache__/
+*.pyc
+tests/
+requirements.txt
+.DS_Store
+**/.DS_Store

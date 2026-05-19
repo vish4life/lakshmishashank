@@ -1,90 +1,91 @@
 import flet as ft
+asset_url = "https://raw.githubusercontent.com/vish4life/my_assets/main/portfolio_assets/assets/"
 about_text ="""Namasthey ..!\n\nI am Lakshmi Shashank a Software Engineer who is passionate about crafting efficient solutions to various business needs and real world problems. I keep myself busy with learning new technologies, art forms and cooking. Beyond work when I’m not at my desk, you’ll likely find me\n\n   - Exploring the world through a lens—capturing landscapes and family moments with my photography.\n   - I’m a nature enthusiast who finds peace on a hiking trail and inspiration through traveling to new cultures.\n   - At home, I enjoy decompressing with video games, movies, and a great soundtrack.\n   - Most importantly, I cherish my time playing with my kids, whether we’re on a 'nature scavenger hunt' or just enjoying a quiet afternoon together."""
 connect_text="I’m always open to discussing new opportunities, creative collaborations, or even just sharing a great hiking trail recommendation. Whether you have a specific project in mind or just want to connect, I’d love to hear from you. Let’s build something amazing together!"
 attr_text = "Digital design is a collaborative effort. I’d like to attribute the beautiful icons used throughout this site to the talented creators at Flaticon. Thank you for helping bring this portfolio to life!"
 abt = [
     {
-        'imgsr':'hobby/photo.png',
+        'imgsr': asset_url + 'hobby/photo.png',
         'descr':'I love capturing the world through my lens, finding beauty in both grand landscapes and family moments. Check out the Photography Highlights section below to see my work!',
     },
     {
-        'imgsr':'hobby/hike.png',
+        'imgsr': asset_url + 'hobby/hike.png',
         'descr':'There’s nothing like the peace of a mountain trail to clear the mind and stay connected with nature.\n \n ',
     },
     {
-        'imgsr':'hobby/music.png',
+        'imgsr': asset_url + 'hobby/music.png',
         'descr':'A constant companion in my life, music provides the perfect soundtrack for both focus and relaxation.\n ',
     },
     {
-        'imgsr':'hobby/cooking.png',
+        'imgsr': asset_url + 'hobby/cooking.png',
         'descr':'I enjoy experimenting with flavors in the kitchen, turning a meal into a creative and rewarding project.\n ',
     },
     {
-        'imgsr':'hobby/playing.png',
+        'imgsr': asset_url + 'hobby/playing.png',
         'descr':"My most cherished time is spent with my family, especially engaging in 'nature scavenger hunts' with my kids.\n ",
     },
     {
-        'imgsr':'hobby/coding.png',
+        'imgsr': asset_url + 'hobby/coding.png',
         'descr':'Even in my downtime, building small apps and solving puzzles through code remains a favorite creative outlet.\n ',
     },
     {
-        'imgsr':'hobby/stock.png',
+        'imgsr': asset_url + 'hobby/stock.png',
         'descr':'I enjoy analyzing market trends and applying data-driven strategies to navigate the financial world.\n ',
     },
     {
-        'imgsr':'hobby/gamepad.png',
+        'imgsr': asset_url + 'hobby/gamepad.png',
         'descr':'Whether for the storytelling or the competitive challenge, gaming is my go-to for decompressing and having fun.\n ',
     },
     
 ]
 hob_pix = [
     {
-        'imgsr':'hobby/mycaptures/sea.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/sea.jpg',
         'detls':"Fisherman's pride\n Vancouver"
     },
     {
-        'imgsr':'hobby/mycaptures/horizon.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/horizon.jpg',
         'detls':"Urban Divide\n Muskoka"
     },
     {
-        'imgsr':'hobby/mycaptures/tanjavur.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/tanjavur.jpg',
         'detls':"Chola's Marvel\n Tanjavur"
     },
     {
-        'imgsr':'hobby/mycaptures/nortedam.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/nortedam.jpg',
         'detls':"Nortedam Cathedral\n Montreal"
     },
     {
-        'imgsr':'hobby/mycaptures/food.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/food.jpg',
         'detls':"Thai Delicacy\n Pad Thai"
     },
     {
-        'imgsr':'hobby/mycaptures/owl.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/owl.jpg',
         'detls':"Halloween Hoot\n Mississauga"
     },
     {
-        'imgsr':'hobby/mycaptures/stories.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/stories.jpg',
         'detls':"Wall Arts\n Mississauga"
     },
     {
-        'imgsr':'hobby/mycaptures/natraja.jpg',
+        'imgsr': asset_url + 'hobby/mycaptures/natraja.jpg',
         'detls':"Ether of Consciousness\n Chidambaram"
     },
 ]
 
 connect_icon=[
     {
-        'imgsr':'connect/mail.png',
+        'imgsr': asset_url + 'connect/mail.png',
         'detls':"Gmail",
         'url':"mailto:chlakshmishashank@gmail.com"
     },
     {
-        'imgsr':'connect/linkedin.png',
+        'imgsr': asset_url + 'connect/linkedin.png',
         'detls':"LinkedIn",
         'url':"https://www.linkedin.com/in/lakshmishashankch/"
     },
     {
-        'imgsr':'connect/github.png',
+        'imgsr': asset_url + 'connect/github.png',
         'detls':"Github",
         'url':"https://github.com/vish4life"
     },

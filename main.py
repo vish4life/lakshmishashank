@@ -7,6 +7,7 @@ from tabs.work import experience_view
 from tabs.projects import projects_view
 from tabs.about import about_view
 
+asset_url = "https://raw.githubusercontent.com/vish4life/my_assets/main/portfolio_assets/assets/"
 def main(page: ft.Page):
     page.title = "Lakshmi Shashank"
     page.bgcolor = "#0a0a0f"  # Deep dark background, carbon like
@@ -23,7 +24,7 @@ def main(page: ft.Page):
     
     # page audio
     audio_src = fa.Audio(
-        src="F1HansZimmer.mp3",
+        src=asset_url + "F1HansZimmer.mp3",
         autoplay=True,
         volume=0.1,
     )
@@ -75,7 +76,7 @@ def main(page: ft.Page):
     # Background image stack
     bg_container = ft.Container(
         image=ft.DecorationImage(
-            src="bg.jpg",
+            src= asset_url + "bg.jpg",
             fit=ft.BoxFit.COVER,
             color_filter=ft.ColorFilter(ft.BlendMode.MULTIPLY, "#404040"), # Darken background
             opacity=0.3,

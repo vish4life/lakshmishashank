@@ -1,6 +1,6 @@
 from math import exp
 import flet as ft
-
+asset_url = "https://raw.githubusercontent.com/vish4life/my_assets/main/portfolio_assets/assets/"
 edu_prof = [
     {
         'insti':'University of Central Missouri',
@@ -8,7 +8,7 @@ edu_prof = [
         'place':'Missouri, USA',
         'cours':'CIS & IT',
         'years':'2015 - 2016',
-        'imgsr':'edu/ucm.png',
+        'imgsr': asset_url + 'edu/ucm.png',
         'descr':'Graduated with honors\n- Bigdata (Hadoop)\n- Fullstack (JS & .net)\n- Databases (Oracle, MongoDb)'
     },
     {
@@ -17,7 +17,7 @@ edu_prof = [
         'place':'Bengaluru, India',
         'cours':'Banking & Finance',
         'years':'2010 - 2011',
-        'imgsr':'edu/mahe4.png',
+        'imgsr': asset_url + 'edu/mahe4.png',
         'descr':'PG Diploma\n- Economics\n- Banking & Finance\n- Banking technologies'
     },
     {
@@ -26,7 +26,7 @@ edu_prof = [
         'place':'Hyderabad,India',
         'cours':'Aeronautical Engineering',
         'years':'2004 - 2008',
-        'imgsr':'edu/jntuh.png',
+        'imgsr': asset_url + 'edu/jntuh.png',
         'descr':'Engineering\n- Aerospace\n- CATIA / CAD designing\n- Computational Fluid Dynamics'
     },
     {
@@ -35,7 +35,7 @@ edu_prof = [
         'place':'Hyderabad,India',
         'cours':'MPC',
         'years':'2002 - 2004',
-        'imgsr':'edu/bie.png',
+        'imgsr': asset_url + 'edu/bie.png',
         'descr':'Secondary Education\n- Maths\n- Physics\n- Chemistry'
     },
     
