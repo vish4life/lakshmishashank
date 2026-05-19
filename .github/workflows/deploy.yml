@@ -40,11 +40,12 @@ jobs:
           cache: true
 
       - name: Install Dependencies
-        run: uv pip install flet flet-audio --system
+        # 0.26.0 has no separate audio module on PyPI; it is bundled right inside flet
+        run: uv pip install flet==0.26.0 --system
 
       - name: Build Flet Static Web App
         run: |
-          yes | uv run flet build web --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
+          uv run flet build web --yes --base-url /${{ github.event.repository.name }}/ --route-url-strategy hash
 
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
