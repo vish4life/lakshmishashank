@@ -4,87 +4,87 @@ connect_text="I’m always open to discussing new opportunities, creative collab
 attr_text = "Digital design is a collaborative effort. I’d like to attribute the beautiful icons used throughout this site to the talented creators at Flaticon. Thank you for helping bring this portfolio to life!"
 abt = [
     {
-        'imgsr':'/hobby/photo.png',
+        'imgsr':'hobby/photo.png',
         'descr':'I love capturing the world through my lens, finding beauty in both grand landscapes and family moments. Check out the Photography Highlights section below to see my work!',
     },
     {
-        'imgsr':'/hobby/hike.png',
+        'imgsr':'hobby/hike.png',
         'descr':'There’s nothing like the peace of a mountain trail to clear the mind and stay connected with nature.\n \n ',
     },
     {
-        'imgsr':'/hobby/music.png',
+        'imgsr':'hobby/music.png',
         'descr':'A constant companion in my life, music provides the perfect soundtrack for both focus and relaxation.\n ',
     },
     {
-        'imgsr':'/hobby/cooking.png',
+        'imgsr':'hobby/cooking.png',
         'descr':'I enjoy experimenting with flavors in the kitchen, turning a meal into a creative and rewarding project.\n ',
     },
     {
-        'imgsr':'/hobby/playing.png',
+        'imgsr':'hobby/playing.png',
         'descr':"My most cherished time is spent with my family, especially engaging in 'nature scavenger hunts' with my kids.\n ",
     },
     {
-        'imgsr':'/hobby/coding.png',
+        'imgsr':'hobby/coding.png',
         'descr':'Even in my downtime, building small apps and solving puzzles through code remains a favorite creative outlet.\n ',
     },
     {
-        'imgsr':'/hobby/stock.png',
+        'imgsr':'hobby/stock.png',
         'descr':'I enjoy analyzing market trends and applying data-driven strategies to navigate the financial world.\n ',
     },
     {
-        'imgsr':'/hobby/gamepad.png',
+        'imgsr':'hobby/gamepad.png',
         'descr':'Whether for the storytelling or the competitive challenge, gaming is my go-to for decompressing and having fun.\n ',
     },
     
 ]
 hob_pix = [
     {
-        'imgsr':'/hobby/mycaptures/sea.jpg',
+        'imgsr':'hobby/mycaptures/sea.jpg',
         'detls':"Fisherman's pride\n Vancouver"
     },
     {
-        'imgsr':'/hobby/mycaptures/horizon.jpg',
+        'imgsr':'hobby/mycaptures/horizon.jpg',
         'detls':"Urban Divide\n Muskoka"
     },
     {
-        'imgsr':'/hobby/mycaptures/tanjavur.jpg',
+        'imgsr':'hobby/mycaptures/tanjavur.jpg',
         'detls':"Chola's Marvel\n Tanjavur"
     },
     {
-        'imgsr':'/hobby/mycaptures/nortedam.jpg',
+        'imgsr':'hobby/mycaptures/nortedam.jpg',
         'detls':"Nortedam Cathedral\n Montreal"
     },
     {
-        'imgsr':'/hobby/mycaptures/food.jpg',
+        'imgsr':'hobby/mycaptures/food.jpg',
         'detls':"Thai Delicacy\n Pad Thai"
     },
     {
-        'imgsr':'/hobby/mycaptures/owl.jpg',
+        'imgsr':'hobby/mycaptures/owl.jpg',
         'detls':"Halloween Hoot\n Mississauga"
     },
     {
-        'imgsr':'/hobby/mycaptures/stories.jpg',
+        'imgsr':'hobby/mycaptures/stories.jpg',
         'detls':"Wall Arts\n Mississauga"
     },
     {
-        'imgsr':'/hobby/mycaptures/natraja.jpg',
+        'imgsr':'hobby/mycaptures/natraja.jpg',
         'detls':"Ether of Consciousness\n Chidambaram"
     },
 ]
 
 connect_icon=[
     {
-        'imgsr':'/connect/mail.png',
+        'imgsr':'connect/mail.png',
         'detls':"Gmail",
         'url':"mailto:chlakshmishashank@gmail.com"
     },
     {
-        'imgsr':'/connect/linkedin.png',
+        'imgsr':'connect/linkedin.png',
         'detls':"LinkedIn",
         'url':"https://www.linkedin.com/in/lakshmishashankch/"
     },
     {
-        'imgsr':'/connect/github.png',
+        'imgsr':'connect/github.png',
         'detls':"Github",
         'url':"https://github.com/vish4life"
     },

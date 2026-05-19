@@ -17,7 +17,7 @@ def home_view(on_nav_change):
                             alignment=ft.MainAxisAlignment.START,
                             controls=[
                                 ft.CircleAvatar(
-                                    foreground_image_src="/shashank.jpeg",
+                                    foreground_image_src="shashank.jpeg",
                                     content=ft.Text("LS", color="white", weight=ft.FontWeight.W_200, font_family="Titillium Web Black", size=50),
                                     radius=50,
                                 ),
