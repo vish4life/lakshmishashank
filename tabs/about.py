@@ -263,12 +263,18 @@ def about_view(page:ft.Page):
                     border_radius=8,
                     content=ft.Column(
                                 [
-                                    ft.Text(
-                                        attr_text,
-                                        size=13, 
-                                        color="white", 
-                                        font_family="Titillium Web",
-                                        style=ft.TextStyle(letter_spacing=1.5)
+                                    ft.Container(
+                                        expand=True,
+                                        border_radius=8,
+                                        alignment=ft.Alignment.CENTER,
+                                        content=
+                                        ft.Text(
+                                            attr_text,
+                                            size=13, 
+                                            color="white", 
+                                            font_family="Titillium Web",
+                                            style=ft.TextStyle(letter_spacing=1.5),
+                                        )
                                     ),
                                     ft.Container(
                                         expand=True,

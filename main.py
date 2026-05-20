@@ -25,7 +25,7 @@ def main(page: ft.Page):
     # page audio
     audio_src = fa.Audio(
         src=asset_url + "F1HansZimmer.mp3",
-        autoplay=True,
+        autoplay=False,
         volume=0.1,
     )
     page.services.append(audio_src)
